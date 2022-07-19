@@ -66,8 +66,50 @@
 ---
 5. Установите на Ubuntu ssh сервер, сгенерируйте новый приватный ключ. Скопируйте свой публичный ключ на другой сервер. Подключитесь к серверу по SSH-ключу.
  ### Ответ
-
+ `openssh-server is already the newest version (1:8.2p1-4ubuntu0.5)`
  
+ ```bash
+ The key fingerprint is:
+SHA256:XY2qlIdC3oePUAb9C/BXUGuJYrGmbCQFGXKJCa5liTM vagrant@vagrant
+The key's randomart image is:
++---[RSA 3072]----+
+|...o+=o.. .o.    |
+|..o+o....o ..=   |
+|E.+ . ooB...* .  |
+|.=   * Bo*o+     |
+|.     B So=.     |
+|     . + *.      |
+|        o .      |
+|                 |
+|                 |
++----[SHA256]-----+
+```
+ ```bash
+vagrant@vagrant:~$ ssh-copy-id t0hab@192.168.0.217
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/home/vagrant/.ssh/id_rsa.pub"
+The authenticity of host '192.168.0.217 (192.168.0.217)' can't be established.
+ECDSA key fingerprint is SHA256:SE8D1rl0ocuW8je/cnBwiJtwkQudYdN0pkaxEfb/SGE.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+/usr/bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- if you are prompted now it is to install the new keys
+t0hab@192.168.0.217's password:
+
+Number of key(s) added: 1
+
+Now try logging into the machine, with:   "ssh 't0hab@192.168.0.217'"
+and check to make sure that only the key(s) you wanted were added.
+
+vagrant@vagrant:~$ ssh t0hab@192.168.0.217
+Last login: Thu Jun 16 12:11:46 2022 from 192.168.0.217
+┌─(~)─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────(t0hab@t0hab-pc:pts/1)─┐
+└─(10:34:10)──> whoiam                                                                                                                                                      ──(Вт,июл19)─┘
+zsh: command not found: whoiam
+┌─(~)─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────(t0hab@t0hab-pc:pts/1)─┐
+└─(10:34:53)──> whoami                                                                                                                                                127 ↵ ──(Вт,июл19)─┘
+t0hab
+┌─(~)─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────(t0hab@t0hab-pc:pts/1)─┐
+└─(10:34:59)──>   
+```
  ---
 6. Переименуйте файлы ключей из задания 5. Настройте файл конфигурации SSH клиента, так чтобы вход на удаленный сервер осуществлялся по имени сервера.
 ### Ответ
