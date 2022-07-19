@@ -128,3 +128,12 @@ t0hab
 
 ---
 7. Соберите дамп трафика утилитой tcpdump в формате pcap, 100 пакетов. Откройте файл pcap в Wireshark.
+### Ответ
+
+```bash
+tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 bytes
+100 packets captured
+105 packets received by filter
+0 packets dropped by kernel
+```
+![img](https://i.ibb.co/92y8WM8/image.png)
