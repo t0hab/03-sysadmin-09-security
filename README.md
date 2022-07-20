@@ -2,21 +2,21 @@
 
 # 1. Установите Bitwarden плагин для браузера. Зарегестрируйтесь и сохраните несколько паролей.
 ### Ответ
-![img1](https://i.ibb.co/cvWzqKN/image.png)
+![img1](https://github.com/t0hab/03-sysadmin-09-security/blob/main/image/1.png)
 
 ---
 # 2. Установите Google authenticator на мобильный телефон. Настройте вход в Bitwarden акаунт через Google authenticator OTP.
 ### Ответ
 Решил использовать уже имеющийся аутентификатор от майкрософт. 
-![img2](https://i.ibb.co/H47Hgtc/photo-2022-07-17-21-08-10.jpg)
+![img2](https://github.com/t0hab/03-sysadmin-09-security/blob/main/image/2.png)
 
-![img3](https://i.ibb.co/ZY3Mxcx/2022-07-17-210552.png)
+![img3](https://github.com/t0hab/03-sysadmin-09-security/blob/main/image/3.png)
 ---
 # 3. Установите apache2, сгенерируйте самоподписанный сертификат, настройте тестовый сайт для работы по HTTPS.
 ### Ответ
-![img4](https://i.ibb.co/rkKRmyZ/image.png)
+![img4](https://github.com/t0hab/03-sysadmin-09-security/blob/main/image/4.png)
 
-![img5](https://i.ibb.co/crLFRCC/image.png)
+![img5](https://github.com/t0hab/03-sysadmin-09-security/blob/main/image/5.png)
 
 ---
 # 4. Проверьте на TLS уязвимости произвольный сайт в интернете (кроме сайтов МВД, ФСБ, МинОбр, НацБанк, РосКосмос, РосАтом, РосНАНО и любых госкомпаний, объектов КИИ, ВПК ... и тому подобное).
@@ -136,4 +136,4 @@ tcpdump: listening on enp0s3, link-type EN10MB (Ethernet), capture size 262144 b
 105 packets received by filter
 0 packets dropped by kernel
 ```
-![img](https://i.ibb.co/92y8WM8/image.png)
+![img](https://github.com/t0hab/03-sysadmin-09-security/blob/main/image/6.png)
